@@ -1,6 +1,6 @@
 This script get output from IBM Domino - DAOS ESTIMATER and generate a customized report
 
-#Usage: AnalizeDaos.py -i <inputfile> -o <outputfile>
+# Usage: AnalizeDaos.py -i <inputfile> -o <outputfile>
 
 Setup:
 
@@ -8,19 +8,18 @@ Setup:
 
 2) [Optional] Define notes.ini variable
 
-  DAOSEST_BUCKETS=32,64,128,256,512,640,768,1024,2048,3072
+# DAOSEST_BUCKETS=32,64,128,256,512,640,768,1024,2048,3072
 
 2) Run command
 
- load daosest -c -o daosest_<serverName>.txt
+# load daosest -c -o daosest_<serverName>.txt
  
  The -c will generate a file like DAOSEST_26_07_2017_09_17_40.csv
  
 3) Run python script
 
- python AnalizeDaos.py -i /notesdata/DAOSEST_26_07_2017_09_17_40.csv -o /tmp/output.txt
+# python AnalizeDaos.py -i /notesdata/DAOSEST_26_07_2017_09_17_40.csv -o /tmp/output.txt
  
-
 You can check console or file output.txt
 
 ===============================================================================
@@ -30,8 +29,7 @@ Server Report
 |- Attachments Count Total :  1784615
 |- Attachments Size Total :  767.30 GB 
 |- Attachments Size % :     57.44 
-
-| -- Sizes (KB)       :|     0<=32 |    32<=64 |   64<=128 |  128<=256 |  256<=512 |  512<=640 |  640<=768 | 768<=1024 |    > 1024 |
+|-- Sizes (KB)       :|     0<=32 |    32<=64 |   64<=128 |  128<=256 |  256<=512 |  512<=640 |  640<=768 | 768<=1024 |    > 1024 |
 |-- Atts Count       :|    821738 |    204057 |    202048 |    159355 |    138845 |     39716 |     29336 |     38377 |    151143 |
 |-- Atts Count %     :|     46.05 |     11.43 |     11.32 |      8.93 |      7.78 |      2.23 |      1.64 |      2.15 |      8.47 |
 |-- Atts Sizes       :|   8.16 GB |   9.07 GB |  18.03 GB |  28.16 GB |  48.29 GB |  21.72 GB |  19.61 GB |  32.46 GB | 581.81 GB |
