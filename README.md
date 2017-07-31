@@ -1,6 +1,7 @@
 This script get output from IBM Domino - DAOS ESTIMATER and generate a customized report
-
-# Usage: AnalizeDaos.py -i <inputfile> -o <outputfile>
+```
+Usage: AnalizeDaos.py -i <inputfile> -o <outputfile>
+```
 
 Setup:
 
@@ -8,17 +9,23 @@ Setup:
 
 2) [Optional] Define notes.ini variable
 
-# DAOSEST_BUCKETS=32,64,128,256,512,640,768,1024,2048,3072
+```
+DAOSEST_BUCKETS=32,64,128,256,512,640,768,1024,2048,3072
+```
 
 2) Run command
 
-# load daosest -c -o daosest_<serverName>.txt
- 
+```
+load daosest -c -o daosest_<serverName>.txt
+```
+
  The -c will generate a file like DAOSEST_26_07_2017_09_17_40.csv
  
 3) Run python script
 
-# python AnalizeDaos.py -i /notesdata/DAOSEST_26_07_2017_09_17_40.csv -o /tmp/output.txt
+```
+python AnalizeDaos.py -i /notesdata/DAOSEST_26_07_2017_09_17_40.csv -o /tmp/output.txt
+```
  
 You can check console or file output.txt
 
